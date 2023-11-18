@@ -1,29 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Beranda, Login, Register } from '../../pages/main';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Login, MainApp, Register } from '../../pages/main';
 
 
-function Routes() {
+function Routers() {
   return (
+  
     <Router>
-      <Switch>
-
-        <Route path='/login'>
-          <Login/>
-        </Route>
-
-        <Route path='/register'>
-          <Register />
-        </Route>
-
-        <Route path='/'>
-          <Beranda />
-        </Route>
-
-      </Switch>
+      <Routes>
+        <Route path='*' element={<MainApp />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/register' element={<Register />}></Route>
+      </Routes>
     </Router>
+    
   )
 }
 
-export default Routes
+export default Routers
