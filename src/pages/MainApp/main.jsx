@@ -9,6 +9,9 @@ import Profile from '../Profile/main'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './mainApp.scss';
+import Login from '../Login/main'
+import Register from '../Register/main'
+
 
 function MainApp() {
   return (
@@ -20,13 +23,17 @@ function MainApp() {
         <Routes>
           <Route path='/' element={<Beranda />}></Route>
           <Route path='/buatevent' element={<BuatEvent />}></Route>
-          <Route path='/event' element={<Event />}></Route>
+          <Route path='/event/*' element={<Event />}>
+   
+          </Route>
           <Route path='/profile' element={<Profile />}></Route>
           <Route path='/tiketku' element={<Tiketku />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='register' element={<Register />}></Route>
         </Routes>
         </div>
      
-      <Footer />
+      <Footer />  
    
     </div>
   )

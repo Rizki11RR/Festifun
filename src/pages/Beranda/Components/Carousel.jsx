@@ -1,6 +1,6 @@
 
 import { Carousel } from 'react-bootstrap';
-import './beranda.scss';
+import '../beranda.scss';
 const CarouselComponent = () => {
   return (
     <Carousel className='carousel-container'> 

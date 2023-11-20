@@ -1,10 +1,27 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+// Event.jsx
+import React from 'react';
+import Carousel from './Carousel';
+import SearchBar from './SearchBar';
+import Lay from './Lay';
 
-function Event() {
+function main() {
   return (
-    <div>Event</div>
+ main
+    <div>main</div>
   )
 }
 
-export default Event
+export default main
+
+    <div>
+      <Carousel />
+      <br />
+      <SearchBar />
+      <br />
+      <Lay />
+    </div>
+  );
+}
+
+export default Event;
+
