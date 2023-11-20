@@ -4,8 +4,15 @@ import Carousel from './Carousel';
 import SearchBar from './SearchBar';
 import Lay from './Lay';
 
-function Event() {
+function main() {
   return (
+ main
+    <div>main</div>
+  )
+}
+
+export default main
+
     <div>
       <Carousel />
       <br />
@@ -17,3 +24,4 @@ function Event() {
 }
 
 export default Event;
+

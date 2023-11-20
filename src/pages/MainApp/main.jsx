@@ -12,6 +12,7 @@ import './mainApp.scss';
 import Login from '../Login/main'
 import Register from '../Register/main'
 
+
 function MainApp() {
   return (
     <div className='mainApp'>
@@ -22,7 +23,9 @@ function MainApp() {
         <Routes>
           <Route path='/' element={<Beranda />}></Route>
           <Route path='/buatevent' element={<BuatEvent />}></Route>
-          <Route path='/event' element={<Event />}></Route>
+          <Route path='/event/*' element={<Event />}>
+   
+          </Route>
           <Route path='/profile' element={<Profile />}></Route>
           <Route path='/tiketku' element={<Tiketku />}></Route>
           <Route path='/login' element={<Login />}></Route>
