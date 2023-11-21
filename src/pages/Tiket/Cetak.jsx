@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 function CetakTiket() {
@@ -93,7 +94,7 @@ function CetakTiket() {
               </div>
               <a
                 href="#"
-                class="btn btn-primary bg-dark-blue align-self-center w-75 mt-4 rounded-3"
+                className="btn btn-primary bg-dark-blue align-self-center w-75 mt-4 rounded-3"
               >
                 Unduh Tiket
               </a>

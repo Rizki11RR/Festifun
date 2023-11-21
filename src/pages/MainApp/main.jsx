@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Beranda from '../Beranda/main'
 import BuatEvent from '../BuatEvent/main'
 import Event from '../Event/main'
-import Tiketku from '../Tiketku/main'
+import Tiket from '../Tiket/main'
 import Profile from '../Profile/main'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
@@ -24,10 +24,10 @@ function MainApp() {
           <Route path='/' element={<Beranda />}></Route>
           <Route path='/buatevent' element={<BuatEvent />}></Route>
           <Route path='/event/*' element={<Event />}>
-   
+
           </Route>
           <Route path='/profile' element={<Profile />}></Route>
-          <Route path='/tiketku' element={<Tiketku />}></Route>
+          <Route path='/tiketku' element={<Tiket />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='register' element={<Register />}></Route>
         </Routes>

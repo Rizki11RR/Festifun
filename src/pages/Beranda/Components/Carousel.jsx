@@ -1,13 +1,14 @@
 
 import { Carousel } from 'react-bootstrap';
 import '../beranda.scss';
+import { C1, C2, C3 } from '../../../assets/main';
 const CarouselComponent = () => {
   return (
     <Carousel className='carousel-container'> 
       <Carousel.Item className='carousel-item'>
         <img
           className="d-block w-100"
-          src="https://placekitten.com/800/400"
+          src={C1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +19,7 @@ const CarouselComponent = () => {
       <Carousel.Item className='carousel-item'>
         <img
           className="d-block w-100"
-          src="https://placekitten.com/800/401"
+          src={C2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -29,7 +30,7 @@ const CarouselComponent = () => {
       <Carousel.Item className='carousel-item'>
         <img
           className="d-block w-100"
-          src="https://placekitten.com/800/402"
+          src={C3}
           alt="Third slide"
         />
         <Carousel.Caption>

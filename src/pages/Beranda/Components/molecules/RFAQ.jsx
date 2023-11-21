@@ -29,10 +29,8 @@ function RFAQ() {
 
   // Misalnya, kita punya beberapa FAQ
   const faqs = [
-    { question: 'Pertanyaan 1?', answer: 'Jawaban untuk pertanyaan 1.' },
-    { question: 'Pertanyaan 2?', answer: 'Jawaban untuk pertanyaan 2.' },
-    { question: 'Pertanyaan 3?', answer: 'Jawaban untuk pertanyaan 3.' },
-    { question: 'Pertanyaan 4?', answer: 'Jawaban untuk pertanyaan 4.' },
+    { question: 'Apakah tiket yang sudah dibeli dapat dikembalikan atau diubah?', answer: 'Kebijakan pengembalian dan perubahan tiket dapat bervariasi tergantung pada kebijakan penyelenggara acara. Sebagian besar acara menerapkan kebijakan non-refundable, tetapi ada beberapa yang memungkinkan perubahan. Pastikan untuk membaca syarat dan ketentuan acara sebelum melakukan pembelian.' },
+    { question: 'Bagaimana cara menghubungi layanan pelanggan FestiFun jika saya mengalami masalah dengan pembelian tiket saya?', answer: 'Jika Anda mengalami masalah atau memiliki pertanyaan terkait pembelian tiket, silakan hubungi tim layanan pelanggan kami melalui formulir kontak di situs web kami atau melalui email support@festifun.com. Kami akan dengan senang hati membantu Anda.' },
   ];
 
   return (
