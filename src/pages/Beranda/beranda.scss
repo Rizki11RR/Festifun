@@ -5,12 +5,13 @@
 
 .carousel-container{
   height: 400px;
+
 }
 
 .carousel-item{
   height: 400px;
   width: 80%;
-  
+
 }
 
 .search-container{
@@ -57,10 +58,12 @@
   gap: 11px;
   justify-content: center;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .card-title {
   font-weight: bold;
+
 }
 
 .card-title-container h5{
@@ -79,7 +82,7 @@
   max-width: 325px;
 }
 .card img{
-  width: 325px;
+  // width: 325px;
   height: 325px;
   object-fit: cover;
   
@@ -91,7 +94,7 @@
 }
 .line {
   border: 2px solid #3F475A;
-  width: 88%;
+  width: 100%;
   margin-bottom: 40px; 
   margin-top: 4px;
 }
@@ -99,7 +102,7 @@
 .title-container h4{
   color: #1250A2;
   font-weight: bold;
-  margin-left: 90px;
+
 }
 
 .home-rec{
