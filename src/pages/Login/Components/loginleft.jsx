@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { bgLogin } from "../../../assets/main";
 function Loginleft() {
   return (

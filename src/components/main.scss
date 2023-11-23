@@ -141,3 +141,41 @@
   color: #3F475A;
   font-size: 12px;
 }
+
+.buttonNavbar{
+
+}
+.btn-login {
+  margin-right: 20px;
+  background-color: #10468E;
+}
+
+.btn-text{
+  text-decoration: none;
+  color: #FAFAFB;
+  font-weight: bold;
+}
+
+.btn-register {
+  background-color: #FAFAFB;
+}
+.btn-register {
+  .btn-text{
+    color: #1250A2;
+  }
+}
+
+.btn-login:hover{
+  background-color: #FAFAFB;
+  .btn-text{
+    color: #1250A2;
+  }
+}
+
+
+.btn-register:hover{
+  background-color: #1250A2;
+  .btn-text{
+    color: #FAFAFB;
+  }
+}

@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { amikom } from '../../assets/main';
 import CarouselComponent from '../../components/molecules/Carousel';
 import CardComponent from '../../components/molecules/card';
+import ButtonCategory from './components/atoms/ButtonCategory';
+import ListCategoryEvent from './components/molecules/ListCategoryEvent';
 
 
 function Event() {
@@ -17,18 +19,7 @@ function Event() {
         <button type="button" className="btn btn-primary">Cari</button>
       </div>
 
-      <div className="input-category">
-        <button type="button" className="btn btn-outline-secondary">Segera Hadir</button>
-        <button type="button" className="btn btn-outline-secondary">Rekomendasi</button>
-        <button type="button" className="btn btn-outline-secondary">Terpopuler</button>
-        <button type="button" className="btn btn-outline-secondary">Festival</button>
-        <button type="button" className="btn btn-outline-secondary">Konser Musik</button>
-        <button type="button" className="btn btn-outline-secondary">Olahraga</button>
-        <button type="button" className="btn btn-outline-secondary">Pameran</button>
-        <button type="button" className="btn btn-outline-secondary">Teater</button>
-        <button type="button" className="btn btn-outline-secondary">Seminar & Workshop</button>
-        <button type="button" className="btn btn-outline-secondary">Lomba & Kompetisi</button>
-      </div>
+      <ListCategoryEvent />
 
       {/* judul Konser Musik */}
       <div className=''>

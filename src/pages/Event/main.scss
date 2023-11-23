@@ -34,8 +34,19 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-}
+  
+  }
 
+.input-category Button {
+    
+
+  }
+  .input-category Button:hover{
+    background-color: #1250A2;
+  }
+  .input-category Button:active{
+    background-color: #8e1025;
+  }
 
 // pembungkus konten
 .bungkus{
