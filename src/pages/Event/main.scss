@@ -1,11 +1,55 @@
-// .card{
-//     width: 18rem;
-// }
-
-.event-title, .deskripsi{
-    color: #1250A2;
+body{
+  margin: 0;
 }
 
-.btn-profil, .btn-beli{
-    background-color: #1250A2;
+
+// poster amikom fest
+.banner{
+  display: flex;
+  justify-content: center; /* Mengatur posisi horizontal ke tengah */
+  align-items: flex-end; /* Mengatur posisi vertikal ke bawah */
 }
+.gambar{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+// kontrol search dan tombol cari
+.input-pencarian {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  margin-top: 40px;
+}
+.btn btn-primary{
+  padding: 0px;
+}
+
+// tombol selector kategori
+.input-category {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+
+// pembungkus konten
+.bungkus{
+  display: flex;
+  margin-top: 50px;
+
+}
+
+// control filter
+.filter1{
+  width: 150px;
+}
+.filter2{
+  margin-top: 20px;
+}
+
+
