@@ -1,16 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Carousel from './Components/Carousel';
+import CarouselComponent from '../../components/molecules/Carousel';
 import SearchingComponent from './Components/search';
-import RekomendasiList from './Components/RekomendasiList';
 import BannerHome from './Components/molecules/BannerHome';
 import FAQ from './Components/molecules/FAQ';
+import RekomendasiBeranda from './Components/RekomendasiBeranda';
 function Beranda() {
   return (
-    <div>
-      <Carousel />
+    <div className='container'>
+      <CarouselComponent />
       <SearchingComponent />
-      <RekomendasiList />
+      <RekomendasiBeranda />
       <BannerHome />
       <FAQ />
     </div>

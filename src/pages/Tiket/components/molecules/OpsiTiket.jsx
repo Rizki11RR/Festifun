@@ -1,9 +1,9 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import Keranjang from '../Keranjang'; // Import Keranjangku component
-import Tiketku from '../Tiketku'; 
 import { TicketFill, CartFill } from 'react-bootstrap-icons';
+import Keranjang from '../Keranjang';
+import Tiketku from '../Tiketku';
 function OpsiTiket() {
 
 
