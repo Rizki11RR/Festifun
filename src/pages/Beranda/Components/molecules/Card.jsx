@@ -1,49 +1,19 @@
-// import { BangunJowo, Ceremony, FBudaya, amikom } from "../../../../assets/main"
-// import ImageCard from "../atoms/ImageCard"
-// import Price from "../atoms/Price"
+// CardComponent.jsx
+import React from 'react';
 
-// import TitleCard from "../atoms/TitleCard"
+const CardComponent = ({ image, title, price, sourceLink }) => (
+  <div className="card">
+    <img src={image} className="card-img-top" alt={title} />
+    <div className="card-body">
+      <h5 className="card-title">{title}</h5>
+      <p className="card-text">Harga: {price}</p>
+    </div>
+    <div className="card-footer">
+      <small className="text-muted">
+        Source: <a href={sourceLink} target="_blank" rel="noopener noreferrer">Link Referensi Gambar</a>
+      </small>
+    </div>
+  </div>
+);
 
-// function card() {
-//   return (
-//     <div className="card-container">
-
-//       <div className="card">
-//         <ImageCard imagecard={amikom} />
-//         <div className="card-body">
-//           <TitleCard cardtitle='AMIKOM FEST 2023
-// BE YOUNG FOREVER' />
-//           <Price price='70.000' />
-//         </div>
-//       </div>
-//       <div className="card">
-//         <ImageCard imagecard={Ceremony} />
-//         <div className="card-body">
-//           <TitleCard cardtitle='CLOSING CEREMONY - CONTINUE THE CHAPTER TO BECOME STONGER' />
-//           <Price price='70.000' />
-//         </div>
-//       </div>
-
-//       <div className="card">
-//         <ImageCard imagecard={FBudaya} />
-//         <div className="card-body">
-//           <TitleCard cardtitle='FESTIVAL BUDAYA LERENG MERAPI
-// PAKEM SLEMAN' />
-//           <Price price='70.000' />
-//         </div>
-//       </div>
-
-//       <div className="card">
-//         <ImageCard imagecard={BangunJowo} />
-//         <div className="card-body">
-//           <TitleCard cardtitle='BANGUNJUWO FESTIFAL #2
-// SEKAR MATARAM' />
-//           <Price price='70.000' />
-//         </div>
-//       </div>
-
-//     </div>
-//   )
-// }
-
-// export default card
+export default CardComponent;

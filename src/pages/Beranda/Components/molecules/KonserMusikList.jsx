@@ -1,5 +1,5 @@
 import { BangunJowo, Ceremony, FBudaya, amikom } from "../../../../assets/main"
-import CardComponent from "../../../../components/molecules/card"
+import CardComponent from "../../../../components/molecules/Card"
 function KonserMusikList() {
   return (
     <div className="card-container">

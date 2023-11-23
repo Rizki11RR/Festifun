@@ -4,7 +4,7 @@ import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { amikom } from '../../assets/main';
 import CarouselComponent from '../../components/molecules/Carousel';
-import CardComponent from '../../components/molecules/card';
+import CardComponent from '../../components/molecules/Card';
 import ButtonCategory from './components/atoms/ButtonCategory';
 import ListCategoryEvent from './components/molecules/ListCategoryEvent';
 
@@ -78,24 +78,67 @@ function Event() {
           {/* card baris satu */}
 
           <div className="card-container">
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
+           <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
           </div>
-          <br />
           <br />
           <div className="card-container">
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
+           <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
           </div>
           <br />
           <div className="card-container">
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
-            <CardComponent image={amikom} title="AMIKOM FEST 2023 BE YOUNG FOREVER" price='50.000' />
+           <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
+            <CardComponent
+              image={amikom}
+              title="AMIKOM FEST 2023 BE YOUNG FOREVER"
+              price='50.000'
+              sourceLink="https://sumber-gambar.com"
+            />
           </div>
-
         </div>
       </div>
     </div>
