@@ -9,4 +9,7 @@ import Ceremony from './images/Closing Ceremony.png';
 import C1 from './images/C1.png';
 import C2 from './images/C2.png';
 import C3 from './images/C3.png';
-export {reactsvg, deadpool, amikom, bannerHome, WJNC, FBudaya, BangunJowo, Ceremony, C1, C2, C3};
+import bgLogin from "./images/bgLogin.png";
+
+export {reactsvg, deadpool, amikom, bannerHome, WJNC, FBudaya, BangunJowo, Ceremony, C1, C2, C3, bgLogin};
+
