@@ -64,3 +64,25 @@ body{
 }
 
 
+/* Tambahkan gaya untuk mengatur tata letak kartu */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-4 {
+  width: 33.33%; /* Setiap kartu akan memakan 1/3 lebar parent */
+  box-sizing: border-box;
+  padding: 0 15px; /* Berikan ruang di antara kartu */
+}
+
+.card-component {
+  height: 100%; /* Tentukan tinggi maksimum untuk kartu */
+}
+
+/* Tambahkan gaya untuk memastikan kartu tidak melebihi 3 per baris */
+@media (max-width: 768px) {
+  .col-sm-4 {
+    width: 50%; /* Pada tampilan layar yang lebih kecil, setiap kartu akan memakan 1/2 lebar parent */
+  }
+}
