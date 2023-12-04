@@ -1,0 +1,18 @@
+/* style.css */
+.nav-link {
+    transition:
+        background-position 0.5s ease-in,
+        color 0.5s ease;
+    width: 16vh;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-position: 0 0;
+    color: #fff;
+    width: 110%;
+}
+.pr {
+    padding: 5px;
+    gap: 5vh;
+}
