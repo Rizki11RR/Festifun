@@ -1,7 +1,8 @@
 import { React } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Person, LockFill,Google, Facebook, Apple } from "react-bootstrap-icons";
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 function Login() {
   return (
     <div>
@@ -29,9 +30,11 @@ function Login() {
       <div className="mt-5">
         <p>Atau lanjutkan melalui:</p>
             <div className="ms-auto mt-5" >
-        <Google size={50} className="ms-5 me-5"/>
-         <Facebook size={50} className="ms-5 me-5"/>
-          <Apple size={50} className="ms-5 me-5"/>
+            <Row className="ms-5">
+              <Col><Button variant="primary"><Google size={35}/></Button>{' '}  </Col>
+            <Col><Button variant="primary"><Facebook size={35}/></Button>{' '}</Col>
+            <Col><Button variant="primary"><Apple size={35  }/></Button>{' '}</Col>
+              </Row>
             </div>
       </div>
     </Form>

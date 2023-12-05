@@ -28,8 +28,8 @@ function NavBar() {
             
             </div>
           <div>
-            <Button href="#login" style={{ marginRight: '10px',backgroundColor: '#10468E' }}>Masuk</Button>
-            <Button href="#register" variant="outline-primary">Daftar</Button>
+            <Button href="/login" style={{ marginRight: '10px',backgroundColor: '#10468E' }}>Masuk</Button>
+            <Button href="/register" variant="outline-primary">Daftar</Button>
           </div>
         </Navbar.Collapse>
 
