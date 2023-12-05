@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { bgLogin } from "../../../assets/main";
 import Image from 'react-bootstrap/Image';
 function Loginleft() {

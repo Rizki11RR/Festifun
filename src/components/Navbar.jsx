@@ -27,9 +27,15 @@ function NavBar() {
             <NavLink to='buatevent' className='NavText' >Buat Event</NavLink>
             
             </div>
-          <div>
-            <Button href="/login" style={{ marginRight: '10px',backgroundColor: '#10468E' }}>Masuk</Button>
-            <Button href="/register" variant="outline-primary">Daftar</Button>
+
+//           <div>
+//             <Button href="/login" style={{ marginRight: '10px',backgroundColor: '#10468E' }}>Masuk</Button>
+//             <Button href="/register" variant="outline-primary">Daftar</Button>
+
+          <div className='buttonNavbar'>
+            <Button className='btn-login'> <NavLink to='login' className='btn-text'>Masuk</NavLink> </Button>
+            <Button className='btn-register'><NavLink to='register' className='btn-text'>Daftar</NavLink></Button>
+
           </div>
         </Navbar.Collapse>
 

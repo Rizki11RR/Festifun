@@ -3,18 +3,20 @@ import React from "react";
 import "./Tiketku.scss";
 
 import OpsiTiket from "./components/molecules/OpsiTiket";
-import Title from "./components/atoms/Title";
+import Title from "../../components/atoms/Title";
 
 function Tiketku() {
   return (
     <>
+  
       <div className="container">
-        <div className="tiketku-title">
+   
        <Title title='Tiket'/>
-       </div>
-       
+     
         <OpsiTiket />
+      
       </div>
+      
     </>
   );
 }
