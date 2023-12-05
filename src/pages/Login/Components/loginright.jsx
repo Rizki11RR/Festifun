@@ -1,6 +1,9 @@
 
 import { Button, Form } from "react-bootstrap";
-import { Person, LockFill, Google, Facebook, Apple } from "react-bootstrap-icons";
+
+import { Person, LockFill,Google, Facebook, Apple } from "react-bootstrap-icons";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Login() {
   return (
@@ -17,24 +20,47 @@ function Login() {
           <Form.Control type="email" placeholder="Email/username" />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label><LockFill />Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <div className="d-grid gap-2">
-          <Button variant="primary" size="lg" type="submit">
-            Login
-          </Button>
-        </div>
-        <div className="mt-5">
-          <p>Atau lanjutkan melalui:</p>
-          <div className="ms-auto mt-5 login-sosmed" >
-            <Google size={40} className="me-5" />
-            <Facebook size={40} className="me-5" />
-            <Apple size={40} className="me-5" />
-          </div>
-        </div>
-      </Form>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label><LockFill/>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <div className="d-grid gap-2">
+      <Button variant="primary" size="lg" type="submit">
+      Login
+      </Button>
+      </div>
+      <div className="mt-5">
+        <p>Atau lanjutkan melalui:</p>
+            <div className="ms-auto mt-5" >
+            <Row className="ms-5">
+              <Col><Button variant="primary"><Google size={35}/></Button>{' '}  </Col>
+            <Col><Button variant="primary"><Facebook size={35}/></Button>{' '}</Col>
+            <Col><Button variant="primary"><Apple size={35  }/></Button>{' '}</Col>
+              </Row>
+            </div>
+      </div>
+    </Form>
+=======
+//         <Form.Group className="mb-3" controlId="formBasicPassword">
+//           <Form.Label><LockFill />Password</Form.Label>
+//           <Form.Control type="password" placeholder="Password" />
+//         </Form.Group>
+//         <div className="d-grid gap-2">
+//           <Button variant="primary" size="lg" type="submit">
+//             Login
+//           </Button>
+//         </div>
+//         <div className="mt-5">
+//           <p>Atau lanjutkan melalui:</p>
+//           <div className="ms-auto mt-5 login-sosmed" >
+//             <Google size={40} className="me-5" />
+//             <Facebook size={40} className="me-5" />
+//             <Apple size={40} className="me-5" />
+//           </div>
+//         </div>
+//       </Form>
+
     </div>
 
   );
