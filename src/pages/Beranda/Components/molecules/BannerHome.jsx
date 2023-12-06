@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { bannerHome } from "../../../../assets/main"
 
 function BannerHome() {
@@ -9,10 +10,11 @@ function BannerHome() {
         </div>
         <div className="banner-content">
           <h2>Daftarkan Event Anda</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos voluptas delectus laboriosam dolores in modi labore ex, commodi possimus culpa iure, temporibus quod dolorum voluptatum, ipsum magni sunt reprehenderit!</p>
+          <p>Jadikan Event Anda Tampak, Tertuju, dan Tergapai! Daftarkan Event Anda Sekarang!</p>
         </div>
         <div className="banner-button">
-          <button>Buat Event Kamu Disini!</button>
+          <Link to="/buatevent"><button>Buat Event Kamu Disini!</button></Link>
+          
         </div>
       </div>
       </div>

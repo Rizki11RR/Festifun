@@ -1,8 +1,7 @@
 import { React } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Person, LockFill,Google, Facebook, Apple, Telephone, Envelope } from "react-bootstrap-icons";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 function Regisright() {
   return (
     <div>
@@ -15,8 +14,8 @@ function Regisright() {
          <Form style={{width:"80%", marginLeft:"10%", marginTop:"10%"}}>
 
          <Form.Group className="mb-3" controlId="formName">
-        <Form.Label><Person />Nama</Form.Label> 
-        <Form.Control  type="text" placeholder= "Nama Lengkap"  /> 
+        <Form.Label><Person /> Nama Lengkap</Form.Label> 
+        <Form.Control  type="text" placeholder="Nama Lengkap"  /> 
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formNumber">
@@ -25,8 +24,8 @@ function Regisright() {
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label><Envelope />Email</Form.Label> 
-        <Form.Control  type="email" placeholder="Email/Username"  /> 
+        <Form.Label><Envelope /> Email</Form.Label> 
+        <Form.Control  type="email" placeholder="Email/username"  /> 
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -36,19 +35,15 @@ function Regisright() {
 
       <div className="d-grid gap-2">
       <Button variant="primary" size="lg" type="submit">
-        Register
+      Login
       </Button>
       </div>
       <div className="mt-5">
         <p>Atau lanjutkan melalui:</p>
-            <div className="ms-5 mt-5" >
-              <Row className="ms-2">
-              <Col><Button variant="primary"><Google size={35}/></Button>{' '}  </Col>
-            <Col><Button variant="primary"><Facebook size={35}/></Button>{' '}</Col>
-            <Col><Button variant="primary"><Apple size={35 }/></Button>{' '}</Col>
-              </Row>
-            
-
+            <div className="ms-auto mt-5" >
+        <Google size={50} className="me-5 ms-5"/> 
+        <Facebook size={50} className="me-5 ms-5"/> 
+        <Apple size={50} className="me-5 ms-5"/>
             </div>
       </div>
     </Form>

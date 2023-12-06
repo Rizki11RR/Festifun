@@ -19,19 +19,17 @@ function NavBar() {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="d-flex justify-content-between align-items-center">
-          <Nav style={{ fontFamily: 'Poppins', fontWeight: 500 }} />
+          <Nav style={{ fontFamily: 'Poppins', fontWeight: 500 }}/>
           <div className="d-flex ">
-            <NavLink to='/' className='NavText' >Bereanda</NavLink>
-            <NavLink to='event' className='NavText' >Event</NavLink>
-            <NavLink to='tiketku' className='NavText' >Tiketku</NavLink>
-            <NavLink to='buatevent' className='NavText' >Buat Event</NavLink>
-
-          </div>
-
+            <NavLink to='/' className='NavText' >Beranda</NavLink>
+            <NavLink to='/event' className='NavText' >Event</NavLink>
+            <NavLink to='/tiketku' className='NavText' >Tiketku</NavLink>
+            <NavLink to='/buatevent' className='NavText' >Buat Event</NavLink>
+            
+            </div>
           <div className='buttonNavbar'>
-            <Button className='btn-login'> <NavLink to='login' className='btn-text'>Masuk</NavLink> </Button>
-            <Button className='btn-register'><NavLink to='register' className='btn-text'>Daftar</NavLink></Button>
-
+            <Button className='btn-login'> <NavLink to='/login' className='btn-text'>Masuk</NavLink> </Button>
+            <Button className='btn-register'><NavLink to='/register' className='btn-text'>Daftar</NavLink></Button>
           </div>
         </Navbar.Collapse>
 

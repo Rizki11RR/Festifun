@@ -6,7 +6,7 @@ import { Facebook, Twitter } from 'react-bootstrap-icons';
 
 const Footer = () => {
   return (
-    <footer className="footer-container text-white" style={{ backgroundColor: 'rgb(113, 165, 208)' }}>
+    <footer className="footer-container text-white" style={{ backgroundColor: '#10468E' }}>
       <hr className="footer-line" />
 
       <div className="left-section">
@@ -14,11 +14,7 @@ const Footer = () => {
           <img src="https://github.com/Magnum-Opus-Festifun/punyabima/blob/main/aset/logo%20biru.png?raw=true" alt="Logo" style={{ width: '85%' }} />
         </div>
         <hr />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quo quibusdam in optio inventore
-          architecto eaque laboriosam expedita accusamus mollitia distinctio deserunt cumque laborum tempore debitis,
-          obcaecati, earum doloribus?.
-        </p>
+        <p className='text-justify'>EventScapeID adalah platform terkemuka yang menghadirkan informasi lengkap tentang beragam acara budaya, seni, musik, dan kegiatan menarik di Yogyakarta. Kami berkomitmen untuk menghubungkan pencari kegiatan dengan acara-acara yang memikat, menjelajahi kekayaan budaya Yogyakarta, dan memberikan pengalaman tak terlupakan kepada komunitas kami.</p>
         <div className="social-media-icons">
           <Facebook size={24} color="white" />
           <Twitter size={24} color="white" />

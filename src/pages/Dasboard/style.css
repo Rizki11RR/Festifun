@@ -1,9 +1,4 @@
 /* style.css */
-.nav-pills .nav-link:not(.active) {
-    color: black; /* Warna font untuk tautan tidak aktif */
-    background-color: #f8f9fa; /* Warna latar belakang untuk tautan tidak aktif */
-    width: 40%;
-}
 .row {
     height: 80%;
 }

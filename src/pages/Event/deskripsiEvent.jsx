@@ -128,10 +128,8 @@ function DeskripsiEvent() {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
-
   )
 }
 
