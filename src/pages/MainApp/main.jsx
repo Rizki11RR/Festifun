@@ -4,6 +4,7 @@ import Beranda from "../Beranda/main";
 import BuatEvent from "../BuatEvent/main";
 import Event from "../Event/main";
 import Tiket from "../Tiket/main";
+import Unduh from "../Tiket/unduhtiket";
 import Profile from "../Profile/main";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -12,6 +13,7 @@ import Login from "../Login/main";
 import Register from "../Register/main";
 import PaymentPage from "../Event/Payment";
 import Dasboard from "../Dasboard/Dasboard";
+import DeskripsiEvent from "../Event/deskripsiEvent";
 import PesanPage from "../Dasboard/pages/PesanPage";
 import ProfilPage from "../Dasboard/pages/ProfilPage";
 import PostinganPage from "../Dasboard/pages/PostinganPage";
@@ -31,10 +33,10 @@ function MainApp() {
                 <Routes>
                     <Route path="/" element={<Beranda />} />
                     <Route path="/buatevent" element={<BuatEvent />} />
-                                        <Route path="/dasboard/*" element={<Dasboard />} />
+                    <Route path="/dasboard/*" element={<Dasboard />} />
 
                     <Route
-                        path="/event/*"
+                        path="/event"
                         element={
                             <Routes>
                                 <Route path="/" element={<Event />} />
@@ -47,8 +49,10 @@ function MainApp() {
                     />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/tiketku" element={<Tiket />} />
+                    <Route path="/unduh" element={<Unduh />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/deskripsi" element={<DeskripsiEvent />} />
                 </Routes>
             </div>
             <Footer />

@@ -18,18 +18,18 @@ import PostinganPage from "./pages/PostinganPage";
 
 function Dasboard() {
     return (
-        <div className="container m-5">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col-md-3 brdr">
                     <Sidebar />
                 </div>
-                <div className="col-md-9 bg-primary text-white container-fluid rounded">
+                <div className="col-md-9">
                     <Outlet />
                     <Routes>
                         <Route path="/" element={<DasboardPage />} />
+                        <Route path="/post" element={<PostinganPage />} />
                         <Route path="/pesan" element={<PesanPage />} />
                         <Route path="/profil" element={<ProfilPage />} />
-                        <Route path="/post" element={<PostinganPage />} />
                     </Routes>
                 </div>
             </div>

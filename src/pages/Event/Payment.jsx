@@ -1,51 +1,89 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Row, Container } from 'react-bootstrap';
+import logo from "../../assets/images/Bemamikom.jpg";
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Bookmark } from 'react-bootstrap-icons';
+
 
 function PaymentPage({ title, image, price, onClose }) {
   return (
     <Modal show={true} onHide={onClose} centered fullscreen>
+      <Container>
       <Modal.Header closeButton>
-        <div className="text-end" style={{ boxShadow: '0 3px 6px rgba(0, 0, 0, 0.1)' }}>
-          Halaman pembayaran
-        </div>
+        <h3 className='fw-bold'>Detail Event</h3>
         <hr style={{ boxShadow: '0 3px 6px rgba(0, 0, 0, 0.1)' }} />
       </Modal.Header>
+      </Container>
       <Modal.Body>
-        <div style={{  backgroundColor: 'rgb(113, 165, 208)' , padding: '50px', borderRadius: '8px', marginBottom: '15px', paddingBottom: '100px' }}>
-          <h4>Detail event</h4>
-          <h3>{title}</h3>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Container>
+          <div style={{  backgroundColor: 'rgb(113, 165, 208)' , padding: '50px', borderRadius: '8px', marginBottom: '15px', paddingBottom: '100px' }}>
+          
+          <h3 className='text-center fw-bold'>{title}</h3>
+          <row className="d-flex profil align-items-center mb-2">
+            <Link to={'/profile'} style={{textDecoration:'none', color:'black'}}><img src={logo} className='img-fluid rounded-circle me-2' width={50} /><span className='fw-bold'>BEM AMIKOM</span></Link>
+          </row>
+          <div style={{ display: 'flex'}}>
             <img
               src={image}
               alt={title}
-              className="img-fluid"
-              style={{ height: '250px', borderRadius: '20px', boxShadow: '0 3px 6px rgba(0, 0, 0, 0.1)' }}
+              className="img-fluid me-5"
+              style={{ borderRadius: '20px', boxShadow: '0 3px 6px rgba(0, 0, 0, 0.1)' }}
             />
             <div>
-              <h5 style={{ marginBottom: '10px' }}>15 Nov</h5>
-              <div>
-                <p>06.00 AM</p>
-                <p>Seman</p>
-              </div>
-            </div>
-          </div>
-          <h4>Konfirmasi Pesanan</h4>
-          <div>
-            <div style={{ display: 'flex', fontSize: '20px', justifyContent: 'space-between' }}>
-              <p>Nama: Joko Sijodo</p>
-              <p>Umur: 24 Tahun</p>
-              <p>Jenis Kelamin: Laki-Laki</p>
-              <p>Nomor Telepon: +628918318374</p>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <h4>Tiket akan diambil di:</h4>
-              <h4>Emangkamumau@yahoo.com</h4>
+                <table className="mb-5 fw-bold">
+                  <tr>
+                    <td>Penyelenggara</td>
+                    <td>:</td>
+                    <td>BEM AMIKOM YK</td>
+                  </tr>
+                  <tr>
+                    <td>Tanggal</td>
+                    <td>:</td>
+                    <td>Jumat, 15 November 2023</td>
+                  </tr>
+                  <tr>
+                    <td>Waktu</td>
+                    <td>:</td>
+                    <td>14:00 - 23:59</td>
+                  </tr>
+                  <tr>
+                    <td>Lokasi</td>
+                    <td>:</td>
+                    <td>Stadion Mandala Krida, Yogyakarta</td>
+                  </tr>
+                  <tr>
+                    <td>Harga</td>
+                    <td>:</td>
+                    <td>Rp {price}</td>
+                  </tr>
+                </table>
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-between p-5">
-          <h4>Metode Pembayaran</h4>
+          <h4 className='fw-bold mt-5'>Detail Pemesanan</h4>
+          <div>
+            <div className='mb-5'>
+              <div className='name mb-2'>
+                <label className='text-secondary'>Nama</label>
+                <h3 className=''>Joko Sijodo</h3>
+              </div>
+              <div className='gender mb-2'>
+                <label className='text-secondary'>Jenis Kelamin</label>
+                <h4 className=''>Laki - Laki</h4>
+              </div>
+              <div className='number mb-2'>
+                <label className='text-secondary'>No. Telepon</label>
+                <h4 className=''>+628918318374</h4>
+              </div>
+              <div className='name mb-2'>
+                <label className='text-secondary'>Email</label>
+                <h4 className=''>joko.sijodo@gmail.com</h4>
+              </div>
+            </div>
+          </div>
+        <div className="mt-5 d-flex justify-content-between">
+          <h4 className='fw-bold'>Metode Pembayaran</h4>
           <h5 className="mt-3">Harga: {price}</h5>
         </div>
         <div className="text-center">
@@ -55,7 +93,7 @@ function PaymentPage({ title, image, price, onClose }) {
               <h5 className="text-start">UPI Payment</h5>
               <p className="text-start">Pembayaran dengan UPI Payment</p>
             </div>
-            <p>></p>
+            <p></p>
           </div>
           <hr />
           <div className="d-flex justify-content-around align-items-center">
@@ -64,7 +102,7 @@ function PaymentPage({ title, image, price, onClose }) {
               <h5 className="text-start">Debit/Credit Payment</h5>
               <p className="text-start">Dengan Debit/Credit Payment</p>
             </div>
-            <p>></p>
+            <p></p>
           </div>
           <hr />
           <div className="d-flex justify-content-around align-items-center">
@@ -73,16 +111,16 @@ function PaymentPage({ title, image, price, onClose }) {
               <h5 className="text-start">Paylater</h5>
               <p className="text-start">Pembayaran dengan Paylater</p>
             </div>
-            <p>></p>
+            <p></p>
           </div>
           <hr />
           <div className="d-flex justify-content-around align-items-center">
             <img src="data:image/png;base64,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" alt="Net Bangkig" style={{ marginRight: '10px', width: '120px' }} />
             <div>
-              <h5 className="text-start">Net Bangkig</h5>
-              <p className="text-start">Pembayaran dengan Net Bangkig</p>
+              <h5 className="text-start">Net Banking</h5>
+              <p className="text-start">Pembayaran dengan Net Banking</p>
             </div>
-            <p>></p>
+            <p></p>
           </div>
           <hr />
           <div className="d-flex justify-content-around align-items-center">
@@ -91,13 +129,18 @@ function PaymentPage({ title, image, price, onClose }) {
               <h5 className="text-start">M-Banking Payment</h5>
               <p className="text-start">Pembayaran dengan M-Banking</p>
             </div>
-            <p>></p>
+            <p></p>
           </div>
           <hr />
-          
+          <div className='d-flex justify-content-end gap-3'>
+          <Button variant="danger">Batalkan</Button>
+          <Link to={'/tiketku'}><Button style={{background:'#1250A2'}}>Bayar Sekarang</Button></Link> 
+          </div>
         </div>
+        </Container>
       </Modal.Body>
     </Modal>
+
   );
 }
 

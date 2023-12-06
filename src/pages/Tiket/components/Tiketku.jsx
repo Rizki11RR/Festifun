@@ -6,6 +6,7 @@ import WaktuAcara from './atoms/WaktuAcara'
 import LokasiAcara from './atoms/LokasiAcara'
 import PosterAcara from './atoms/PosterAcara'
 import {  deadpool } from '../../../assets/main'
+import { Link } from 'react-router-dom'
 
 
 function Tiketku() {
@@ -37,7 +38,7 @@ function Tiketku() {
         </div>
       </div>
       <div className="button-container">
-        <button className="buy-button">Unduh Tiket</button>
+        <Link to={'/unduh'}><button className="buy-button">Unduh Tiket</button></Link>
       </div>
     </div>
     

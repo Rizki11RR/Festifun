@@ -13,8 +13,8 @@ const CarouselComponent = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Summer 2023</h3>
+          <p>Music Festival</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
@@ -24,8 +24,8 @@ const CarouselComponent = () => {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Pesta Rakyat Simpedes</h3>
+          <p>Saksikanlah band favorit kalian!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
@@ -35,8 +35,8 @@ const CarouselComponent = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Prambanan Music Senja</h3>
+          <p>Prambanan Music Senja - "Love In Jogja"</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

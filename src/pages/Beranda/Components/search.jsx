@@ -18,9 +18,15 @@ const SearchingComponent = () => {
           <div className='search-item'>
             <p>Jenis Event</p>
             <Form.Control as="select">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
+              <option value="selected">Pilih Jenis Event</option>
+              <option value="option1">Budaya</option>
+              <option value="option1">Budaya</option>
+              <option value="option2">WorkShop</option>
+              <option value="option3">Webinar</option>
+              <option value="option4">Seminar</option>
+              <option value="option5">Konser</option>
+              <option value="option6">Pameran</option>
+              <option value="option7">Kuliner</option>
             </Form.Control>
           </div>
         </Col>
@@ -29,7 +35,7 @@ const SearchingComponent = () => {
         <Col xs={1}>
           <div className="text-center search-item">
             <p>&nbsp;</p>
-            <Button className="align-bottom search-button">Cari</Button>
+            <Button style={{background:'#1250A2'}} className='search-button'>Cari</Button>
           </div>
         </Col>
       </Row>

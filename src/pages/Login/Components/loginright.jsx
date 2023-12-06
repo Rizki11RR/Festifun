@@ -41,28 +41,6 @@ function Login() {
           </div>
         </div>
       </Form>
-      <div>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label><LockFill />Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <div className="d-grid gap-2">
-            <Button variant="primary" size="lg" type="submit">
-              Login
-            </Button>
-          </div>
-          <div className="mt-5">
-            <p>Atau lanjutkan melalui:</p>
-            <div className="ms-auto mt-5 login-sosmed" >
-              <Google size={40} className="me-5" />
-              <Facebook size={40} className="me-5" />
-              <Apple size={40} className="me-5" />
-            </div>
-          </div>
-        </Form>
-
-      </div>
       </>
 
  )

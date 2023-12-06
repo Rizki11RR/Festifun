@@ -1,18 +1,17 @@
 /* style.css */
-.nav-link {
-    transition:
-        background-position 0.5s ease-in,
-        color 0.5s ease;
-    width: 16vh;
+.sidebar{
+    height: 100vh;
+    border-right: 1px solid #838383;
+    box-shadow: 0 0 15px rgba(123, 121, 121, 0.5);
+    clip-path: inset(0px -5px 0px 0px);
 }
 
-.nav-link.active,
-.nav-link:hover {
-    background-position: 0 0;
+.nav-link.active {
+    background-color: #1250a2 !important;
     color: #fff;
-    width: 110%;
 }
-.pr {
-    padding: 5px;
-    gap: 5vh;
+
+.nav-link, .navlink:hover{
+    color: black;
+    font-weight: bold;
 }

@@ -10,6 +10,7 @@ import CarouselComponent from '../../components/molecules/Carousel';
 import CardComponent from '../../components/molecules/Card';
 import ListCategoryEvent from './components/molecules/ListCategoryEvent';
 import PaymentPage from './Payment';
+import { Button } from 'react-bootstrap';
 
 // Mendefinisikan beberapa array kartu untuk setiap kategori
 const cardData1 = [
@@ -27,7 +28,8 @@ const cardData2 = [
 
 const cardData3 = [
   { title: "AMIKOM FEST 2023 BE YOUNG FOREVER", image: amikom, price: '50.000' },
-  { title: "AMIKOM FEST 2023 BE YOUNG FOREVER VP", image: amikom, price: '70.000' },{ title: "AMIKOM FEST 2023 BE YOUNG FOREVER", image: amikom, price: '50.000' },
+  { title: "AMIKOM FEST 2023 BE YOUNG FOREVER VP", image: amikom, price: '70.000' },
+  { title: "AMIKOM FEST 2023 BE YOUNG FOREVER", image: amikom, price: '50.000' },
   
 ];
 
@@ -59,7 +61,7 @@ function Event() {
       <CarouselComponent />
       <div className="input-pencarian">
         <input type="text" className="form-control" placeholder="Cari event kamu disini!" aria-label="Cari event kamu disini!" aria-describedby="button-addon2" />
-        <button type="button" className="btn btn-primary">Cari</button>
+        <Button style={{background:'#1250A2'}}>Cari</Button>
       </div>
 
       <ListCategoryEvent />
@@ -150,7 +152,7 @@ function Event() {
                         sourceLink="https://sumber-gambar.com"
                         onClick={() => handleCardClick(card.title, card.image, card.price)}
                       />
-                      <hr/>
+                      <br />
                     </div>
                   ))}
                 </div>
