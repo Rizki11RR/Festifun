@@ -19,18 +19,14 @@ function NavBar() {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="d-flex justify-content-between align-items-center">
-          <Nav style={{ fontFamily: 'Poppins', fontWeight: 500 }}/>
+          <Nav style={{ fontFamily: 'Poppins', fontWeight: 500 }} />
           <div className="d-flex ">
             <NavLink to='/' className='NavText' >Bereanda</NavLink>
             <NavLink to='event' className='NavText' >Event</NavLink>
             <NavLink to='tiketku' className='NavText' >Tiketku</NavLink>
             <NavLink to='buatevent' className='NavText' >Buat Event</NavLink>
-            
-            </div>
 
-//           <div>
-//             <Button href="/login" style={{ marginRight: '10px',backgroundColor: '#10468E' }}>Masuk</Button>
-//             <Button href="/register" variant="outline-primary">Daftar</Button>
+          </div>
 
           <div className='buttonNavbar'>
             <Button className='btn-login'> <NavLink to='login' className='btn-text'>Masuk</NavLink> </Button>
