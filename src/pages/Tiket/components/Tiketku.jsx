@@ -1,49 +1,14 @@
+import { amikom } from "../../../assets/main";
+import TiketkuList from "./molecules/TiketkuList";
 
 
-import NamaAcara from './atoms/NamaAcara'
-import TanggalAcara from './atoms/TanggalAcara'
-import WaktuAcara from './atoms/WaktuAcara'
-import LokasiAcara from './atoms/LokasiAcara'
-import PosterAcara from './atoms/PosterAcara'
-import {  deadpool } from '../../../assets/main'
-import { Link } from 'react-router-dom'
 
 
 function Tiketku() {
   return (
     <>
-  
+   <TiketkuList PosterAcara={amikom} NamaAcara='Amikom' TanggalAcara='Jum, 9 November' WaktuAcara='12:00' LokasiAcara='Sleman'/>
 
-    <div className="keranjang-container">
-      <div className="thumbnail-container">
-       <PosterAcara PosterAcara={deadpool}/>
-      </div>
-      <div className="info-container">
-        <div className="info-section">
-          <div className="event-info">
-            <NamaAcara NamaAcara='WJNC 2023'/>
-          </div>
-          <div className="event-info">
-           <TanggalAcara TanggalAcara='Jum, 9 November'/>
-          </div>
-        </div>
-        <div className="divider"></div>
-        <div className="info-section">
-          <div className="event-info">
-            <WaktuAcara WaktuAcara='12:00'/>
-          </div>
-          <div className="event-info">
-            <LokasiAcara LokasiAcara='Sleman'/>
-          </div>
-        </div>
-      </div>
-      <div className="button-container">
-        <Link to={'/unduh'}><button className="buy-button">Unduh Tiket</button></Link>
-      </div>
-    </div>
-    
-
-    
     </>
   )
 }

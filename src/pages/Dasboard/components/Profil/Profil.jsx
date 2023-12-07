@@ -14,9 +14,9 @@ export class Profil extends Component {
                 <p className='subjek'>Tigabelas Pro - Event Organizer Yogyakarta</p>
                 <p className='desc'>Event Organizer • Manpower Management • Event Production more info ⬇️</p>
                 <div className="tombol mt-4">
-                    <button type="button" className="btn btn-outline-secondary">Edit Profil</button>
-                    <button type="button" className="btn btn-outline-secondary mx-3">Tambahkan Postingan</button>
-                    <button type="button" className="btn btn-outline-secondary">Lihat Statistik</button>
+                    <button type="button" className="btn btn-outline-secondary btnProfile">Edit Profil</button>
+                    <button type="button" className="btn btn-outline-secondary mx-3 btnProfile">Buat Event</button>
+                    <button type="button" className="btn btn-outline-secondary btnProfile">Lihat Statistik</button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,3 @@
-// ProfilPage.jsx
-import React from "react";
 
 function ProfilPage() {
     return (

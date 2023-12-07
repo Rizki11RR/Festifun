@@ -24,7 +24,7 @@ function Tiketku() {
                     <img src={tiket} alt="" className="img-fluid"/>
                 </div>
                 <div className="deskripsi my-4 p-2">
-                    <div class="card-body">
+                    <div className="card-body">
                         <h2 className="text-dark-blue fw-bold">Deskripsi</h2>
                         <p>
                         Live Music Performance with: <br />
