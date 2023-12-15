@@ -70,8 +70,9 @@
 
 .middle-section {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   color: #3F475A;
+  width: 40%;
 }
 .middle-section h3 {
   font-size: 19px;
@@ -96,6 +97,8 @@
 .right-section {
   flex: 1;
   color: #3F475A;
+  display: flex;
+  justify-content: end;
 }
 
 .stay-connected {
@@ -105,8 +108,7 @@
 .email-input {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
-  
+  margin-right: 70px;
 }
 
 .email-input input {

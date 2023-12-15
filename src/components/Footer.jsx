@@ -6,11 +6,11 @@ import { Facebook, Twitter } from 'react-bootstrap-icons';
 
 const Footer = () => {
   return (
-    <footer className="footer-container text-white" style={{ backgroundColor: '#10468E' }}>
+    <footer className="footer-container text-white " style={{ backgroundColor: '#10468E' }}>
       <hr className="footer-line" />
 
-      <div className="left-section">
-        <div className="logo">
+      <div className="left-section ">
+        <div className="logo ms-4">
           <img src="https://github.com/Magnum-Opus-Festifun/punyabima/blob/main/aset/logo%20biru.png?raw=true" alt="Logo" style={{ width: '85%' }} />
         </div>
         <hr />
@@ -21,8 +21,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="middle-section">
-        <div className="event-plans">
+      <div className="middle-section ms-4 ">
+        <div className="event-plans" >
           <h3 style={{ color: 'white' }}>Rencana Event</h3>
           <ul>
             <li style={{ color: 'white' }}>Membuat dan Mengatur</li>

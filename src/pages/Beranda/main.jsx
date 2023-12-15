@@ -8,6 +8,8 @@ import RekomendasiBeranda from './Components/RekomendasiBeranda';
 
 
 function Beranda() {
+
+
   return (
     <div className='container'>
       <CarouselComponent />

@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { amikom } from '../../assets/main';
+import { amikom, ClosingCeremony, FBudaya } from '../../assets/main';
 import CarouselComponent from '../../components/molecules/Carousel';
 import CardComponent from '../../components/molecules/Card';
 import ListCategoryEvent from './components/molecules/ListCategoryEvent';
@@ -15,7 +15,7 @@ import { Button } from 'react-bootstrap';
 // Mendefinisikan beberapa array kartu untuk setiap kategori
 const cardData1 = [
   { title: "AMIKOM FEST 2023 BE YOUNG FOREVER", image: amikom, price: '50.000' },
-  { title: "AMIKOM FEST 2023 BE YOUNG FOREVER VP", image: amikom, price: '70.000' },
+  { title: "FESTIVAL LERENG BUDAYA MERAPAI", image: FBudaya, price: '70.000' },
   { title: "AMIKOM FEST 2023 BE YOUNG FOREVER", image: amikom, price: '50.000' },
  
 ];
@@ -44,6 +44,7 @@ const cardData5 = [
   { title: "AMIKOM FEST 2023 BE YOUNG FOREVER VP", image: amikom, price: '70.000' },
   { title: "AMIKOM FEST 2023 BE YOUNG FOREVER VP", image: amikom, price: '70.000' },
 ];
+
 const categoryTitles = ["Upcoming Events", "Festival Fair", "Konser", "Exhibition Expo", "Workshop"];
 
 // Komponen utama
